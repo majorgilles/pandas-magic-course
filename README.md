@@ -213,20 +213,19 @@ Choose either Titanic or California Housing and produce a notebook that:
 
 ## Recommended environment
 
+This starter course repo is a minimal [`uv`](https://docs.astral.sh/uv/) project. It intentionally starts with dependency metadata only; notebooks and lesson code should be added by the course-building issues rather than preemptively generated.
+
+Install dependencies and start Jupyter:
+
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows Git Bash / macOS / Linux
-pip install pandas matplotlib seaborn scikit-learn jupyter ipykernel
-jupyter notebook
+uv sync
+uv run jupyter notebook
 ```
 
-On Windows PowerShell:
+If you need to add a package later:
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install pandas matplotlib seaborn scikit-learn jupyter ipykernel
-jupyter notebook
+```bash
+uv add package-name
 ```
 
 ## Well-known references used by the course
@@ -256,3 +255,14 @@ Dataset and tutorial references:
 ## Build roadmap
 
 The GitHub issues in this repository break the course into independently grabbable notebook/content slices. Each issue includes acceptance criteria and well-known references for the lesson.
+
+- [#1 Bootstrap course repo and notebook environment](https://github.com/majorgilles/pandas-magic-course/issues/1)
+- [#2 Day 1: DataFrame/Series mental model with Palmer Penguins](https://github.com/majorgilles/pandas-magic-course/issues/2)
+- [#3 Day 2: loc, iloc, masks, assignment, and index surprises](https://github.com/majorgilles/pandas-magic-course/issues/3)
+- [#4 Day 3: EDA and groupby with Palmer Penguins](https://github.com/majorgilles/pandas-magic-course/issues/4)
+- [#5 Day 4: Titanic cleaning — missing values, dtypes, and categoricals](https://github.com/majorgilles/pandas-magic-course/issues/5)
+- [#6 Day 5: Feature/target prep and ML-textbook pandas idioms](https://github.com/majorgilles/pandas-magic-course/issues/6)
+- [#7 Day 6: California Housing numeric EDA and ML-ready features](https://github.com/majorgilles/pandas-magic-course/issues/7)
+- [#8 Day 6/7: Joins, concat, reshape, and before/after visual checks](https://github.com/majorgilles/pandas-magic-course/issues/8)
+- [#9 Day 7: Final mini-project notebook and rubric](https://github.com/majorgilles/pandas-magic-course/issues/9)
+- [#10 Create resource appendix of well-known pandas/ML tutorials](https://github.com/majorgilles/pandas-magic-course/issues/10)

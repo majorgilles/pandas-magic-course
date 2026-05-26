@@ -1,0 +1,14 @@
+[project]
+name = "pandas-magic-course"
+version = "0.1.0"
+description = "A 1-week pandas course for demystifying ML textbook examples with real datasets and visual checks."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=6.29",
+    "jupyter>=1.1",
+    "matplotlib>=3.8",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "seaborn>=0.13",
+]
