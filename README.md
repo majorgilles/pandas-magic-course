@@ -36,6 +36,7 @@ By the end of the week, you should be able to:
 - **Duration:** 7 days
 - **Time:** 60–90 minutes per day
 - **Style:** read → annotate → rebuild → visualize
+- **Primary lesson format:** Jupyter notebooks, not standalone pure Python `.py` lesson files
 - **Assessment:** final mini-project notebook
 
 Each day follows this pattern:
@@ -214,6 +215,8 @@ Choose either Titanic or California Housing and produce a notebook that:
 ## Recommended environment
 
 This starter course repo is a minimal [`uv`](https://docs.astral.sh/uv/) project. It intentionally starts with dependency metadata only; notebooks and lesson code should be added by the course-building issues rather than preemptively generated.
+
+When lesson materials are added, they should be delivered as Jupyter notebooks. Avoid standalone pure Python `.py` lesson files unless a future issue explicitly calls for a small supporting utility.
 
 Install dependencies and start Jupyter:
 
